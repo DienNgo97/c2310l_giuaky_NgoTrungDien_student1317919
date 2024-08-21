@@ -65,4 +65,5 @@ INSERT INTO books (title, author_id, category_id, publisher, publish_year, quant
 ('The Adventures of Sherlock Holmes', 9, 4, 'George Newnes', 1934, 65),
 ('Discworld: The Colour of Magic', 10, 3, 'Colin Smythe', 1983, 55);
 
+ALTER TABLE books ADD COLUMN is_deleted TINYINT(1) DEFAULT 0;
 
